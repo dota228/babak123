@@ -32,7 +32,6 @@ const search = require('yt-search');
 const configs = require("./configs.json");
 const timestamp = require("console-timestamp");
 var botConfigs = {
-    token: "NTU4OTM0NDk1ODA2NjE5NjUw.XJXyUA.y4FqWFhXCu7HfUFoK6KybVWCJfM",
     prefix: "=",
     gameStatus: "DZ - S.T.A.L.K.E.R",
     statusType: "PLAYING",
@@ -1252,3 +1251,4 @@ async function playYT(client, message, args, ops) {
 
     ops.active.set(message.guild.id, data);
 }
+token = os.environ.get("BOT_TOKEN")

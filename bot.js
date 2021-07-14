@@ -1251,4 +1251,5 @@ async function playYT(client, message, args, ops) {
 
     ops.active.set(message.guild.id, data);
 }
-token = os.environ.get("BOT_TOKEN")
+token = os.environ.get('BOT_TOKEN')
+bot.run(str(token))
